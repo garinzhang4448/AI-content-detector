@@ -35,6 +35,6 @@ if st.button("Submit"):
     content_by_saping = response.json()
     prob_saping = content_by_saping['score']
 
-    st.write("The probability of Human-generated answer: {:.2f}%".format((1-prob_cnn)*100))
-    st.write("The Probability of Human-generated Answer using Saping : {:.2f}%".format((1-float(prob_saping)) * 100))
+    st.write("The probability of Human-generated answer using CNN model: {:.2f}%".format((1-prob_cnn)*100))
+    st.write("The Probability of Human-generated Answer using Sapling : {:.2f}%".format((1-float(prob_saping)) * 100))
 
